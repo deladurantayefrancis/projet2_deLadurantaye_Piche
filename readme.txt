@@ -1,3 +1,6 @@
+# Pour voir l'historique des soumissions "commits" sur le site de github
+https://github.com/deladurantayefrancis/projet2_deLadurantaye_Piche
+
 importer un répertoire github:
 git clone "adresse du répertoire en ligne"
 

@@ -3,13 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Accueil</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"></link>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     </head>
     <body>
 
         <header class="header">
-            <h2>Scroll Down</h2>
-            <p>Scroll down to see the sticky effect.</p>
+            <img src="images/back_img_4.jpg"/>
         </header>
 
         <nav id="navbar">
@@ -43,7 +42,7 @@
             window.onscroll = function() {myFunction()};
 
             var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
+            var sticky = 400;//navbar.offsetTop; - si header est texte, sinon taille de l'image
 
             function myFunction() {
                 if (window.pageYOffset >= sticky) {

@@ -21,7 +21,7 @@ body {
     font-family: 'ProximaNova', Georgia, sans-serif;
 }
 
-.header {
+header {
     background-color: var(--color-main);
     color: var(--color-neutral-second);
     padding: 30px;
@@ -131,4 +131,22 @@ body {
 
 .sticky + .content {
     padding-top: 60px;
+}
+
+
+/*footer*/
+footer{
+    background-color: var(--color-main);
+    padding: 10px 15px;
+}
+
+.footer-link{
+    color: var(--color-neutral-second);
+    text-decoration: none;
+    float: right;
+}
+
+.footer-logo{
+    vertical-align: middle;
+    height: 32px;
 }

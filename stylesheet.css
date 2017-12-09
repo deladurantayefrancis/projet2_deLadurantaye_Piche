@@ -1,0 +1,73 @@
+
+/*Variables globales : Pallette de couleur*/
+:root {
+    --color-main: rgb(3, 19, 37);
+    --color-second: rgb(19, 68, 117);
+    --color-accent: rgb(87, 80, 72);
+    --color-neutral-main: rgb(252, 252, 246);
+    --color-neutral-second: rgb(247, 237, 216);
+    --color-neutral-accent: rgb(255, 221, 10);
+}
+
+body {
+    margin: 0;
+    font-size: 28px;
+    background-color: var(--color-neutral-main);
+}
+
+.header {
+    background-color: var(--color-main);
+    color: var(--color-neutral-second);
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: var(--color-neutral-main);
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: var(--color-main);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border: solid 1px var(--color-neutral-main);
+}
+
+#navbar a:hover {
+    background-color: var(--color-second);
+    color: var(--color-neutral-main);
+    border: solid 1px var(--color-neutral-accent);
+}
+
+#navbar a.active {
+    background-color: var(--color-main);
+    color: var(--color-neutral-second);
+    border: solid 1px var(--color-main);
+}
+
+#navbar a.active:hover {
+    border: solid 1px var(--color-neutral-accent);
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class for navbar with Javascript */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}

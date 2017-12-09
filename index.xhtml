@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Accueil</title>
+        <title>Accueil | Taille Express</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script src="nav-sticky.js"></script>
     </head>
     <body>
 
@@ -14,7 +15,7 @@
         <nav id="navbar">
             <a class="active" href="index.xhtml">Accueil</a>
             <a href="technologie.xhtml">Technologie</a>
-            <a href="contact.xhtml">Nous rejoindre</a>
+            <a href="contact.xhtml">Nous joindre</a>
             <div class="dropdown" >
                 <button class="dropbtn">Auteurs
                     <i class="fa fa-caret-down"></i>
@@ -52,19 +53,5 @@
                 <img src="images/back_img_1.jpg"/>
             </div>
         </div>
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("navbar");
-            var sticky = 400;//navbar.offsetTop; - si header est texte, sinon taille de l'image
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-        </script>
     </body>
 </html>

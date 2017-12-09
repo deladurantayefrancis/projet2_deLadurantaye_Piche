@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Accueil</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"></link>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script src="nav-sticky.js"></script>
     </head>
     <body>
 
@@ -15,7 +16,7 @@
         <nav id="navbar">
             <a class="active" href="index.xhtml">Accueil</a>
             <a href="technologie.xhtml">Technologie</a>
-            <a href="contact.xhtml">Nous rejoindre</a>
+            <a href="contact.xhtml">Nous joindre</a>
             <div class="dropdown" >
                 <button class="dropbtn">Auteurs
                     <i class="fa fa-caret-down"></i>
@@ -39,19 +40,5 @@
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         </div>
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-        </script>
     </body>
 </html>

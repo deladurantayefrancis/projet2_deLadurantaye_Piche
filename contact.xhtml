@@ -4,17 +4,52 @@
     <head>
         <title>Contact</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script src="nav-sticky.js"></script>
     </head>
     <body>
         <header>
             <h2>Scroll Down</h2>
             <p>Scroll down to see the sticky effect.</p>
         </header>
-        <nav>
+        <nav id="navbar">
             <a href="index.xhtml">Accueil</a>
             <a href="technologie.xhtml">Technologie</a>
             <a class="active" href="contact.xhtml">Nous joindre</a>
         </nav>
+        <div class="content">
+            <div class="contact-content">
+                <h3>Des questions?</h3>
+                <form action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post">
+                    <div class="contact-form-item">
+                        <label class="label-contact">Prénom
+                            <input class="input-contact" name="Prénom"/>
+                        </label>
+                    </div>
+                    <div class="contact-form-item">
+                        <label class="label-contact">Nom
+                            <input class="input-contact" name="Nom"/>
+                        </label>
+                    </div>
+                    <div class="contact-form-item">
+                        <label class="label-contact">Courriel
+                            <input class="input-contact" type="email" name="Courriel"/>
+                        </label>
+                    </div>
+                    <div class="contact-form-item">
+                        <label class="label-contact">Téléphone
+                            <input class="input-contact" type="tel" name="Téléphone"/>
+                        </label>
+                    </div>
+                    <label class="label-contact">Objet
+                        <input class="input-contact" type="email" name="Objet"/>
+                    </label>
+                    <label class="label-contact">Message
+                        <textarea class="textarea-contact" name="Message" rows="4"/>
+                    </label>
+                    <input class="button" type="submit" value="Envoyer"/>
+                </form>
+            </div>
+        </div>
         <footer>
             <a href="http://diro.umontreal.ca/accueil/" target="_blank">
                 <img class="footer-logo" src="images/logodiro.png" alt="Logo du DIRO"/>

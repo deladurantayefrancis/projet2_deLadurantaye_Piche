@@ -15,7 +15,7 @@ body {
     background-color: var(--color-neutral-main);
 }
 
-.header {
+header {
     background-color: var(--color-main);
     color: var(--color-neutral-second);
     padding: 30px;
@@ -24,13 +24,13 @@ body {
 
 
 /* Style the navbar */
-#navbar {
+nav {
     overflow: hidden;
     background-color: var(--color-neutral-main);
 }
 
 /* Navbar links */
-#navbar a {
+nav a {
     float: left;
     display: block;
     color: var(--color-main);
@@ -40,19 +40,19 @@ body {
     border: solid 1px var(--color-neutral-main);
 }
 
-#navbar a:hover {
+nav a:hover {
     background-color: var(--color-second);
     color: var(--color-neutral-main);
     border: solid 1px var(--color-neutral-accent);
 }
 
-#navbar a.active {
+nav a.active {
     background-color: var(--color-main);
     color: var(--color-neutral-second);
     border: solid 1px var(--color-main);
 }
 
-#navbar a.active:hover {
+nav a.active:hover {
     border: solid 1px var(--color-neutral-accent);
 }
 
@@ -70,4 +70,20 @@ body {
 
 .sticky + .content {
     padding-top: 60px;
+}
+
+footer{
+     background-color: lightgrey;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+ }
+
+footer > hr{
+    margin-top: 1px
+}
+
+footer > img{
+    height: 20px;
 }

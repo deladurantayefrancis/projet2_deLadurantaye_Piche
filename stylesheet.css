@@ -74,18 +74,16 @@ nav a.active:hover {
 
 footer{
     background-color: var(--color-main);
-    height: auto;
+    padding: 10px 15px;
 }
 
-footer > a{
+.footer-link{
     color: var(--color-neutral-second);
     text-decoration: none;
-    margin: 4px 10px;
     float: right;
 }
 
-footer > img{
+.footer-logo{
     vertical-align: middle;
-    height: 20px;
-    margin: 10px;
+    height: 32px;
 }

@@ -39,6 +39,15 @@ header img {
     width: 100%;
 }
 
+table{
+    border-collapse: collapse;
+}
+
+th:not(.empty-cell),
+td:not(.empty-cell){
+    border: solid thin var(--color-main);
+}
+
 /*couleurs*/
 .white{
     color : var(--color-neutral-main);
@@ -72,7 +81,8 @@ hr{
 
 }
 
-.block_main-color ul li{
+.block_main-color ul li,
+.block_second-color ul li{
     list-style: none;
     display: table-row;
 }

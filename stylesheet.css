@@ -11,7 +11,12 @@
 
 @font-face {
     font-family: ProximaNova;
-    src: url(ProximaNova.ttf);
+    src: url(font/ProximaNova.ttf);
+}
+
+@font-face {
+    font-family: HolmenRegular;
+    src: url(font/HolmenRegular.ttf);
 }
 
 body {
@@ -26,6 +31,10 @@ header {
     color: var(--color-neutral-second);
     padding: 0px;
     text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'HolmenRegular', Georgia, sans-serif;
 }
 
 

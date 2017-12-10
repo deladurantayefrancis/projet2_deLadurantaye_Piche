@@ -39,6 +39,9 @@ header img {
     width: 100%;
 }
 
+.white{
+    color : var(--color-neutral-main);
+}
 
 /* Style the navbar */
 #navbar {
@@ -193,6 +196,7 @@ td.tg-texte > h3{
 
 td.tg-texte > a{
     color: var(--color-main);
+    display: inline-block;
     text-align: center;
     padding: 14px;
     text-decoration: none;
@@ -202,6 +206,7 @@ td.tg-texte > a{
     transition: 0.5s;
     background: transparent;
     font-size: 0.9em;
+    word-wrap: normal;
 }
 
 td.tg-texte > a:hover{
@@ -209,6 +214,54 @@ td.tg-texte > a:hover{
     background-color: var(--color-main);
     border: solid 1px var(--color-neutral-accent);
 }
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: var(--color-second);
+}
+.text-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-show {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-show {
+        display: block;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+    .presentation-mobile{
+        width: 100vw;
+    }
+    .button-mobile{
+        display: inline-block;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        border: solid 1px var(--color-neutral-main);
+        transition-duration: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        background: transparent;
+        font-size: 0.9em;
+        word-wrap: normal;
+    }
+    .button-mobile:hover{
+        color: var(--color-neutral-main);
+        background-color: var(--color-main);
+        border: solid 1px var(--color-neutral-accent);
+    }
+}
+
+
 
 /* The sticky class for navbar with Javascript */
 .sticky {

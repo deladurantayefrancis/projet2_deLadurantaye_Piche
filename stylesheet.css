@@ -39,14 +39,69 @@ header img {
     width: 100%;
 }
 
+/*couleurs*/
 .white{
     color : var(--color-neutral-main);
 }
+
+.no-margin{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.block_main-color{
+    background-color: var(--color-main);
+    color: var(--color-neutral-main);
+}
+
+.block_neutral-color{
+    background-color: var(--color-neutral-main);
+    color: var(--color-main);
+}
+
+.block_neutral-second-color {
+    background-color: var(--color-neutral-second);
+    color: var(--color-main);
+}
+
+hr{
+    border:none;
+    background-color: var(--color-second);
+    height: 5px;
+
+}
+
+.block_main-color ul li{
+    list-style: none;
+    display: table-row;
+}
+
+ul li::before {
+    content: "\2023";
+    color: var(--color-neutral-accent);
+    font-size: 1em;
+    display: table-cell;
+    padding-right: 1.1225em;
+    position: relative;
+    top: 0;
+}
+
+.text-block{
+    padding: 3em;
+}
+
+.presentation-image.center {
+    width: 70vh;
+    margin: auto;
+}
+
 
 /* Style the navbar */
 #navbar {
     background-color: var(--color-neutral-main);
     width: 100%;
+    z-index: 3;
 }
 
 /* Navbar links */
@@ -137,10 +192,11 @@ h1,h2,h3,h4,h5,h6{
 
 h2{
     line-height: 3em;
+    text-align: center;
 }
 
 h3{
-    margin-top: 5em;
+    text-align: center;
 }
 
 div.presentation{

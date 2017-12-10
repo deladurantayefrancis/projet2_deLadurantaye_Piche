@@ -132,6 +132,14 @@ h1,h2,h3,h4,h5,h6{
     color: var(--color-main);
 }
 
+h2{
+    line-height: 3em;
+}
+
+h3{
+    margin-top: 5em;
+}
+
 div.presentation{
     position: relative;
 }
@@ -256,7 +264,13 @@ footer > hr{
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 15px;
+    border: 1px solid rgb(169, 169, 169);
     display: inline-block;
+}
+
+.input-contact:focus,
+.textarea-contact:focus{
+    border:1px solid #4D90FE;
 }
 
 .textarea-contact{

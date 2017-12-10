@@ -4,6 +4,10 @@ var sticky = null;
 window.onload = function() {
     navbar = document.getElementById("navbar");
     sticky = navbar.offsetTop;
+
+    window.addEventListener('resize', function(event) {
+        sticky = navbar.offsetTop;
+    })
 };
 
 window.onscroll = function() {

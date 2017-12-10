@@ -144,6 +144,26 @@ ul li::before {
     border: solid 1px var(--color-neutral-accent);
 }
 
+.button{
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    margin: 14px;
+    text-decoration: none;
+    border: solid 1px var(--color-main);
+    transition-duration: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: transparent;
+    font-size: 0.9em;
+    word-wrap: normal;
+}
+.button:hover{
+    color: var(--color-neutral-main);
+    background-color: var(--color-main);
+    border: solid 1px var(--color-neutral-accent);
+}
+
 
 .dropdown {
     float: right;
@@ -176,6 +196,22 @@ ul li::before {
 .dropdown:hover .dropdown-content {
     margin: 0;
     display: block;
+}
+
+
+/*menu commande collapse*/
+.collapse{
+    cursor: pointer;
+    display: block;
+}
+.collapse + input{
+    display: none;
+}
+.collapse + input + div{
+    display:none;
+}
+.collapse + input:checked + div{
+    display:block;
 }
 
 
@@ -358,10 +394,19 @@ footer > hr{
     margin: 10px 15px;
 }
 
+
+/*Form style*/
 .contact-form-item{
     width: calc(50% - 4px);
     display: inline-block;
 }
+
+
+.contact-form-item-small{
+    width: 5em;
+    display: inline-block;
+}
+
 
 .label-contact{
     display: block;
@@ -373,13 +418,25 @@ footer > hr{
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid rgb(169, 169, 169);
+    border: 1px solid var(--color-second);
     display: inline-block;
 }
 
+
+.input-select{
+    width: 100%;
+    height: 34px;
+    font-size: 24px;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    border: 1px solid var(--color-second);
+    display: inline-block;
+}
+
+
 .input-contact:focus,
 .textarea-contact:focus{
-    border:1px solid #4D90FE;
+    border:1px solid var(--color-second);
 }
 
 .textarea-contact{

@@ -19,6 +19,7 @@
     src: url(font/HolmenRegular.ttf);
 }
 
+
 body {
     margin: 0;
     font-size: 28px;
@@ -289,6 +290,10 @@ h2{
 
 h3{
     text-align: center;
+}
+
+.proxima{
+    font-family: 'ProximaNova', Georgia, sans-serif;
 }
 
 div.presentation{

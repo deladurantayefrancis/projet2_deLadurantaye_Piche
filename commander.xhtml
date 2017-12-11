@@ -29,10 +29,14 @@
         <div class="content">
             <div class="contact-content">
                 <h2>Prenez rendez-vous</h2>
-                <form action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post">
-
+                <p>Si vous souhaitez fixer un rendez-vous afin que nous puissions prendre vos mensurations, inscrivez
+                    l'heure et la date à laquelle vous souhaitez venir nous voir.</p>
+                <form class="rendez-vous" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post">
+                    <textarea class="textarea-order" name="Rendez-vous" rows="2"/>
+                    <input class="button" type="submit" value="Demander un rendez-vous"/>
                 </form>
 
+                <br/>
                 <hr/>
 
                 <h3>Pas le temps de venir en magasin?</h3>
@@ -214,7 +218,7 @@
                         <textarea class="textarea-order" name="description" rows="4"/>
                     </label>
 
-                    <input class="button" type="submit" value="Envoyer"/>
+                    <input class="button" type="submit" value="Envoyer la commande"/>
                 </form>
             </div>
         </div>

@@ -200,7 +200,7 @@ ul li::before {
     display: inline-block;
     text-align: center;
     padding: 14px;
-    margin: 14px;
+    margin: 14px 0;
     text-decoration: none;
     border: solid 1px var(--color-main);
     transition-duration: 0.5s;
@@ -250,11 +250,16 @@ ul li::before {
     display: block;
 }
 
+.rendez-vous{
+    text-align: center;
+}
 
 /*menu commande collapse*/
 .collapse{
     cursor: pointer;
     display: block;
+    width: 500px;;
+    margin: 1em auto;
 }
 .collapse + input{
     display: none;
@@ -438,6 +443,11 @@ footer > hr{
 
 
 .label-contact{
+    display: block;
+}
+
+label{
+    width: 100%;
     display: block;
 }
 

@@ -48,6 +48,46 @@ td:not(.empty-cell){
     border: solid thin var(--color-main);
 }
 
+figure{
+    margin-bottom: 2em;
+}
+
+input:not([type="submit"]){
+    width: 100%;
+    height: 30px;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-second);
+    display: inline-block;
+}
+
+
+input:focus,
+textarea:focus{
+    border: 1px solid var(--color-second);
+}
+
+textarea{
+    width: 100%;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    resize: vertical;
+    border: 1px solid var(--color-second);
+}
+
+.input-select{
+    width: 100%;
+    height: 34px;
+    font-size: 24px;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    border: 1px solid var(--color-second);
+    display: inline-block;
+}
+
 /*couleurs*/
 .white{
     color : var(--color-neutral-main);
@@ -74,7 +114,7 @@ td:not(.empty-cell){
     color: var(--color-main);
 }
 
-.footer-separator{
+footer > hr{
     border:none;
     background-color: var(--color-second);
     height: 5px;
@@ -218,10 +258,10 @@ ul li::before {
 .collapse + input{
     display: none;
 }
-.collapse + input + div{
+.collapse + input + form{
     display:none;
 }
-.collapse + input:checked + div{
+.collapse + input:checked + form{
     display:block;
 }
 
@@ -386,7 +426,7 @@ footer > hr{
 }
 
 
-.contact-form-item-small{
+.order-form-item-small{
     width: 5em;
     display: inline-block;
 }
@@ -394,43 +434,6 @@ footer > hr{
 
 .label-contact{
     display: block;
-}
-
-.input-contact{
-    width: 100%;
-    height: 30px;
-    font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid var(--color-second);
-    display: inline-block;
-}
-
-
-.input-select{
-    width: 100%;
-    height: 34px;
-    font-size: 24px;
-    margin-top: 4px;
-    margin-bottom: 14px;
-    border: 1px solid var(--color-second);
-    display: inline-block;
-}
-
-
-.input-contact:focus,
-.textarea-contact:focus{
-    border: 1px solid var(--color-second);
-}
-
-.textarea-contact{
-    width: 100%;
-    font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    display: inline-block;
-    resize: vertical;
-    border: 1px solid var(--color-second);
 }
 
 .contact-content{

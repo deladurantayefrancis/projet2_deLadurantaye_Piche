@@ -74,7 +74,7 @@ td:not(.empty-cell){
     color: var(--color-main);
 }
 
-hr{
+.footer-separator{
     border:none;
     background-color: var(--color-second);
     height: 5px;
@@ -243,7 +243,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h2{
-    line-height: 3em;
+    margin: 3em 0 3ex 0;
     text-align: center;
 }
 
@@ -347,38 +347,6 @@ td.tg-texte > a:hover{
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .mobile-show {
-        display: block;
-    }
-    .mobile-hidden {
-        display: none;
-    }
-    .presentation-mobile{
-        width: 100vw;
-    }
-    .button-mobile{
-        display: inline-block;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-        border: solid 1px var(--color-neutral-main);
-        transition-duration: 0.5s;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        background: transparent;
-        font-size: 0.9em;
-        word-wrap: normal;
-    }
-    .button-mobile:hover{
-        color: var(--color-neutral-main);
-        background-color: var(--color-main);
-        border: solid 1px var(--color-neutral-accent);
-    }
-}
-
-
-
 /* The sticky class for navbar with Javascript */
 .sticky {
     position: fixed;
@@ -452,7 +420,7 @@ footer > hr{
 
 .input-contact:focus,
 .textarea-contact:focus{
-    border:1px solid var(--color-second);
+    border: 1px solid var(--color-second);
 }
 
 .textarea-contact{
@@ -462,9 +430,48 @@ footer > hr{
     margin-bottom: 15px;
     display: inline-block;
     resize: vertical;
+    border: 1px solid var(--color-second);
 }
 
 .contact-content{
-    width: 70%;
     padding: 0 15%;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-show {
+        display: block;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+    .presentation-mobile{
+        width: 100vw;
+    }
+    .button-mobile{
+        display: inline-block;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        border: solid 1px var(--color-neutral-main);
+        transition-duration: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        background: transparent;
+        font-size: 0.9em;
+        word-wrap: normal;
+    }
+    .button-mobile:hover{
+        color: var(--color-neutral-main);
+        background-color: var(--color-main);
+        border: solid 1px var(--color-neutral-accent);
+    }
+    .contact-content{
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form-item{
+        width: 100%;
+    }
 }

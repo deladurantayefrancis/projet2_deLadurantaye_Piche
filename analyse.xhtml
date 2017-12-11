@@ -11,13 +11,29 @@
             <img src="images/back_img_15.jpg" alt="homme en veston à l'extérieur"/>
         </header>
         <nav id="navbar">
-            <a href="index.xhtml">Accueil</a>
-            <a href="technologie.xhtml">Technologie</a>
-            <a href="commander.xhtml">Commander</a>
-            <a href="contact.xhtml">Nous joindre</a>
-            <a href="auteurs.xhtml">Auteurs</a>
-            <a class="active" href="analyse.xhtml">Analyse</a>
-            <a href="design.xhtml">Design</a>
+            <div class="mobile-hidden">
+                <a href="index.xhtml">Accueil</a>
+                <a href="technologie.xhtml">Technologie</a>
+                <a href="commander.xhtml">Commander</a>
+                <a href="contact.xhtml">Nous joindre</a>
+            </div>
+            <div class="mobile-show left dropdown">
+                <button class="dropbtn active"><img src="images/hamberger-menu.png" alt="Accueil"/></button>
+                <div class="dropdown-left active">
+                    <a href="index.xhtml">Accueil</a>
+                    <a href="technologie.xhtml">Technologie</a>
+                    <a href="commander.xhtml">Commander</a>
+                    <a href="contact.xhtml">Nous joindre</a>
+                </div>
+            </div>
+            <div class="dropdown" >
+                <button class="active dropbtn">Auteurs</button>
+                <div class="dropdown-right active">
+                    <a href="auteurs.xhtml">Auteurs du site</a>
+                    <a class="active" href="analyse.xhtml">Analyse</a>
+                    <a href="design.xhtml">Design</a>
+                </div>
+            </div>
         </nav>
         <div class="content-narrow">
             <div class="block_second-color">

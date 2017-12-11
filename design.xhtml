@@ -11,17 +11,27 @@
             <img src="images/back_img_9.jpg" alt="Echantillon du design"/>
         </header>
         <nav id="navbar">
-            <a href="index.xhtml">Accueil</a>
-            <a href="technologie.xhtml">Technologie</a>
-            <a href="commander.xhtml">Commander</a>
-            <a href="contact.xhtml">Nous joindre</a>
-            <div class="dropdown mobile-hidden" >
-                <button class="active dropbtn">Auteurs
-                </button>
-                <div class="dropdown-content active">
+            <div class="mobile-hidden">
+                <a href="index.xhtml">Accueil</a>
+                <a href="technologie.xhtml">Technologie</a>
+                <a href="commander.xhtml">Commander</a>
+                <a href="contact.xhtml">Nous joindre</a>
+            </div>
+            <div class="mobile-show left dropdown">
+                <button class="dropbtn active"><img src="images/hamberger-menu.png" alt="Accueil"/></button>
+                <div class="dropdown-left active">
+                    <a href="index.xhtml">Accueil</a>
+                    <a href="technologie.xhtml">Technologie</a>
+                    <a href="commander.xhtml">Commander</a>
+                    <a href="contact.xhtml">Nous joindre</a>
+                </div>
+            </div>
+            <div class="dropdown right">
+                <button class="active dropbtn">Auteurs</button>
+                <div class="dropdown-right active">
                     <a href="auteurs.xhtml">Auteurs du site</a>
                     <a href="analyse.xhtml">Analyse</a>
-                    <a href="design.xhtml">Design</a>
+                    <a class="active" href="design.xhtml">Design</a>
                 </div>
             </div>
         </nav>
@@ -43,10 +53,10 @@
             </div>
             <div class="block_neutral-second-color text-block">
                 <p>‣ Des polices avec un look chic : ici le look classique Holmen s’agence très bien avec la moderne Proxima Nova pour créer cette image recherchée.</p>
+                <h4 class="proxima" style="display: inline-block ;padding: 2em">Proxima Nova</h4><h4 class="holmen" style="display: inline-block ;padding: 2em">Holman Regular</h4>
             </div>
             <div class="block_neutral-color text-block">
                 <p>‣ Toutes les pages de notre site sont compatibles avec tablettes ou smartphones pour répondre à la réalité de notre ère. </p>
-                <h4 class="proxima" style="display: inline-block ;padding: 2em">Proxima Nova</h4><h4 class="holmen" style="display: inline-block ;padding: 2em">Holman Regular</h4>
             </div>
         </div>
         <footer>

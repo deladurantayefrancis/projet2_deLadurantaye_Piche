@@ -13,13 +13,24 @@
         </header>
 
         <nav id="navbar">
-            <a class="active" href="index.xhtml">Accueil</a>
-            <a href="technologie.xhtml">Technologie</a>
-            <a href="commander.xhtml">Commander</a>
-            <a href="contact.xhtml">Nous joindre</a>
-            <div class="dropdown mobile-hidden" >
+            <div class="mobile-hidden">
+                <a class="active" href="index.xhtml">Accueil</a>
+                <a href="technologie.xhtml">Technologie</a>
+                <a href="commander.xhtml">Commander</a>
+                <a href="contact.xhtml">Nous joindre</a>
+            </div>
+            <div class="mobile-show left dropdown">
+                <button class="dropbtn active"><img src="images/hamberger-menu.png" alt="Accueil"/></button>
+                <div class="dropdown-left active">
+                    <a class="active" href="index.xhtml">Accueil</a>
+                    <a href="technologie.xhtml">Technologie</a>
+                    <a href="commander.xhtml">Commander</a>
+                    <a href="contact.xhtml">Nous joindre</a>
+                </div>
+            </div>
+            <div class="dropdown" >
                 <button class="dropbtn">Auteurs</button>
-                <div class="dropdown-content">
+                <div class="dropdown-right">
                     <a href="auteurs.xhtml">Auteurs du site</a>
                     <a href="analyse.xhtml">Analyse</a>
                     <a href="design.xhtml">Design</a>
